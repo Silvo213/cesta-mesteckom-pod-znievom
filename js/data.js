@@ -138,8 +138,8 @@ const STOPS = [
       photo: "img/cast/tretia-budova-gymnazia.jpg",
       desc: "Prvá slovenská astronómka a objaviteľka komét sa v bielom plášti pozerá do hvezdárskeho ďalekohľadu a s úsmevom spomína na študentské časy — na chodby plné maturitných tabiel, recitačné súťaže a základy, ktoré jej dala znievska škola."
     },
-    image: null,
-    imageCaption: null,
+    image: "img/tretia-budova-gymnazia.jpg",
+    imageCaption: "Funkcionalistická budova gymnázia, dnes základná škola",
     youtubeId: null
   },
   {
@@ -163,8 +163,8 @@ const STOPS = [
       photo: "img/cast/klastor.jpg",
       desc: "Prozaik Martin Kukučín, ktorý študoval v tunajšom maďarskom učiteľskom ústave, kráča s knihou v ruke popri kláštore. Recituje verše najprv po maďarsky, potom ich prekladá — a rozjíma nad tvrdými osudmi ľudí i nezlomnosťou tohto miesta."
     },
-    image: null,
-    imageCaption: null,
+    image: "img/klastor.jpg",
+    imageCaption: "Budova kláštora s kostolnou vežou",
     youtubeId: null
   },
   {
@@ -209,8 +209,8 @@ const STOPS = [
       photo: "img/cast/dom-olejkara.jpg",
       desc: "V tmavej lekárnickej dielni plnej sušených byliniek a sklenených fľaštičiek mieša olejkár v bielom habite slávny Uhorský balzam — oleum carpathicum. Rozpráva, ako sa Kláštor stal centrom liečiteľstva a ako boli znievske výrobky žiadané až vo Varšave."
     },
-    image: null,
-    imageCaption: null,
+    image: "img/dom-olejkara.jpg",
+    imageCaption: "Dom olejkára s klenutou bránou",
     youtubeId: null
   },
   {
