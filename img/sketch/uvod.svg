@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="14 40 574 400">
   <defs>
     <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
       <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="11" result="n"/>

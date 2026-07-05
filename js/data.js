@@ -37,7 +37,7 @@ const STOPS = [
     id: "kostol-sv-mikulasa",
     num: 2,
     title: "Kostol sv. Mikuláša",
-    short: "Gotický kostol z 13. storočia s kamennou krstiteľnicou a slnečnými hodinami z roku 1766.",
+    short: "Gotický kostol z 13. storočia s kamennou krstiteľnicou a slnečnými hodinami s rokom 1666.",
     text: [
       "Podľa dávnej tradície, na mieste staršieho románskeho kostolíka sv. Michala, bol v polovici 13. storočia postavený gotický kostol zasvätený sv. Mikulášovi. Jeho vybudovanie súviselo so snahou zabezpečiť cirkevnú nezávislú farnosť kráľovského mestečka od kláštora premonštrátov. Z tejto doby môžeme v kostole obdivovať kamennú krstiteľnicu, alebo gotický portál do sakristie so zachovalými jednokrídlovými dverami.",
       "Kostol prešiel za stáročia rôznymi prestavbami. Najviac však po roku 1728, keď vyhorel. Z barokového obdobia pochádza oltár sv. Mikuláša s motívom svätca, ako zachraňuje život troch chlapcov. Z 19. storočia pochádza obraz Panny Márie Ružencovej od známeho maliara Jozefa Božetecha Klemensa.",
@@ -110,10 +110,10 @@ const STOPS = [
       "Martin Szentiványi (1633 – 1705) – prefekt trnavskej univerzitnej kníhtlačiarne, pričinil sa o rozvoj papierní, ktoré viedol v rokoch 1687 – 1696"
     ],
     scene: {
-      character: "Jozef Gregor-Tajovský",
-      actor: "Pavel Siráň ml.",
+      character: "Marka Mácová",
+      actor: "Janka Frličková",
       photo: "img/cast/lipova-alej.jpg",
-      desc: "Básnik v elegantnom čiernom obleku s motýlikom recituje pod mohutnou stáročnou lipou poéziu — najprv v maďarčine, potom v preklade. Obdivuje lipy, ktoré prežili stáročia, a rozjíma nad tvrdými osudmi ľudí i nezlomnosťou tohto miesta."
+      desc: "Za jasného slnečného dňa perie meštianka Marka Mácová v potoku biele plátno a rozpráva o každodennom živote mestečka — o znievskych papierňach, vodnom kanáli jezuitov aj o ničivom požiari z roku 1666, po ktorom si ľudia museli pomáhať."
     },
     image: "img/lipova-alej.jpg",
     imageCaption: "Lipová alej biskupa Klucha",
@@ -157,7 +157,12 @@ const STOPS = [
       "Martin Kukučín (1860 – 1922) – známy slovenský spisovateľ",
       "Jozef Gregor-Tajovský (1874 – 1940) – známy slovenský spisovateľ a dramaturg"
     ],
-    scene: null,
+    scene: {
+      character: "Martin Kukučín",
+      actor: "Pavel Siráň ml.",
+      photo: "img/cast/klastor.jpg",
+      desc: "Prozaik Martin Kukučín, ktorý študoval v tunajšom maďarskom učiteľskom ústave, kráča s knihou v ruke popri kláštore. Recituje verše najprv po maďarsky, potom ich prekladá — a rozjíma nad tvrdými osudmi ľudí i nezlomnosťou tohto miesta."
+    },
     image: null,
     imageCaption: null,
     youtubeId: null
@@ -172,7 +177,6 @@ const STOPS = [
       "Tí svoje sídlo nevyužívali len pre seba, ale v roku 1869 ho prenajali ako dočasné sídlo gymnáziu. O jeho založenie v Kláštore sa zaslúžil znievsky richtár Ján Capko. V prvom školskom roku tu študovalo 73 študentov, ktorých vyučovali piati profesori na čele s riaditeľom Martinom Čulenom. Po zatvorení gymnázia budova slúžila opäť Točekovskému rodu."
     ],
     persons: [
-      "Ján Capko, starší – znievsky richtár, otec básnika J. Capka Znievskeho",
       "Martin Čulen (1823 – 1894) – prvý riaditeľ gymnázia v Kláštore pod Znievom"
     ],
     scene: {
@@ -218,12 +222,7 @@ const STOPS = [
       "[TEXT NA DOPLNENIE — pošlite mi fotografiu tabule alebo text tohto zastavenia a doplním ho.]"
     ],
     persons: [],
-    scene: {
-      character: "Marka Mácová",
-      actor: "Janka Frličková",
-      photo: "img/cast/luky-nad-klastorom.jpg",
-      desc: "Za jasného slnečného dňa perie meštianka Marka Mácová v potoku biele plátno a rozpráva o každodennom živote mestečka — o znievskych papierňach, vodnom kanáli jezuitov aj o ničivom požiari z roku 1666, po ktorom si ľudia museli pomáhať."
-    },
+    scene: null,
     image: "img/luky-nad-klastorom.jpg",
     imageCaption: "Pohľad zo Skaličiek, v pozadí Tlstá a Ostrá",
     youtubeId: null
