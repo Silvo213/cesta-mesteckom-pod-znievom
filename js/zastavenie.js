@@ -71,6 +71,37 @@
       stop.persons.map(p => `<li>${p}</li>`).join("");
   }
 
+  // sekcia „Viac informácií“ — vykreslí bloky zo stop.more
+  if (Array.isArray(stop.more) && stop.more.length) {
+    document.getElementById("more-section").hidden = false;
+    document.getElementById("more-icon").src = "img/sketch/icons/" + stop.id + ".svg";
+    const out = [];
+    for (const b of stop.more) {
+      switch (b.t) {
+        case "lead":
+          out.push(`<p class="m-lead">${b.body}</p>`); break;
+        case "h":
+          out.push(`<h3 class="m-h">${b.text}</h3>`); break;
+        case "p":
+          out.push(`<p class="m-p">${b.body}</p>`); break;
+        case "facts":
+          out.push(`<div class="m-facts">` + b.items.map(i =>
+            `<div class="m-fact"><b>${i.n}</b><span>${i.l}</span></div>`).join("") + `</div>`); break;
+        case "timeline":
+          out.push(`<div class="m-timeline">` + b.items.map(i =>
+            `<div class="m-tl"><span class="y">${i.y}</span><p>${i.text}</p></div>`).join("") + `</div>`); break;
+        case "list":
+          out.push(`<div class="m-list">${b.heading ? `<h4>${b.heading}</h4>` : ""}<ul>` +
+            b.items.map(i => `<li>${i}</li>`).join("") + `</ul></div>`); break;
+        case "know":
+          out.push(`<aside class="m-know"><span class="tag">Viete, že…?</span><p>${b.body}</p></aside>`); break;
+        case "quote":
+          out.push(`<blockquote class="m-quote"><p>${b.body}</p>${b.src ? `<cite>${b.src}</cite>` : ""}</blockquote>`); break;
+      }
+    }
+    document.getElementById("more-blocks").innerHTML = out.join("");
+  }
+
   // predchádzajúce / nasledujúce zastavenie
   const prev = STOPS[(i + STOPS.length - 1) % STOPS.length];
   const next = STOPS[(i + 1) % STOPS.length];

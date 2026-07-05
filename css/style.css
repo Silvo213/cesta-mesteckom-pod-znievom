@@ -582,6 +582,96 @@ footer nav a:hover { border-bottom: 3px solid var(--gold); }
 }
 
 /* ------------------------------------------------------------
+   VIAC INFORMÁCIÍ — rozšírený obsah zastavenia
+   ------------------------------------------------------------ */
+.more {
+  border-top: 1.5px solid var(--blue);
+  background: var(--paper-warm);
+  padding: clamp(60px, 8vw, 110px) 0;
+}
+.more-head {
+  display: flex; align-items: flex-end; gap: clamp(18px, 3vw, 40px);
+  margin-bottom: clamp(34px, 5vw, 56px);
+}
+.more-icon { width: clamp(90px, 11vw, 140px); height: auto; flex: none; margin-bottom: 4px; }
+@media (max-width: 700px) { .more-head { flex-direction: column-reverse; align-items: flex-start; gap: 10px; } }
+.more-blocks { max-width: 840px; }
+
+.m-lead {
+  font-size: clamp(1.12rem, 1.8vw, 1.38rem);
+  font-weight: 600; line-height: 1.55;
+  margin-bottom: 34px;
+}
+.m-h {
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  margin: 46px 0 16px;
+  display: flex; align-items: center; gap: 13px;
+}
+.m-h::before { content: ""; width: 12px; height: 12px; background: var(--gold); flex: none; }
+.m-p { margin-bottom: 1.15em; font-size: 1.03rem; }
+.m-p strong { color: var(--blue); font-weight: 800; }
+
+.m-facts {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-left: 1px solid var(--hair);
+  margin: 42px 0;
+}
+.m-fact { border-right: 1px solid var(--hair); padding: 18px 20px; background: var(--paper); }
+.m-fact b {
+  font-family: var(--font-head); font-stretch: 118%; font-weight: 800;
+  font-size: clamp(1.8rem, 3.4vw, 2.7rem); line-height: 1; display: block; color: var(--blue);
+}
+.m-fact span {
+  display: block; margin-top: 9px;
+  font-size: .7rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; opacity: .8;
+  line-height: 1.4;
+}
+
+.m-timeline { margin: 42px 0; border-left: 2.5px solid var(--blue); }
+.m-tl { position: relative; padding: 0 0 24px 30px; }
+.m-tl:last-child { padding-bottom: 4px; }
+.m-tl::before {
+  content: ""; position: absolute; left: -8px; top: 5px;
+  width: 13px; height: 13px; border-radius: 50%;
+  background: var(--paper); border: 2.5px solid var(--blue);
+}
+.m-tl:hover::before { background: var(--gold); }
+.m-tl .y { font-family: var(--font-head); font-stretch: 118%; font-weight: 800; font-size: 1.3rem; color: var(--blue); }
+.m-tl p { font-size: .96rem; margin-top: 3px; max-width: 60ch; }
+
+.m-know {
+  border: 1.5px solid var(--gold); background: var(--paper);
+  padding: 24px 26px 22px; margin: 40px 0; position: relative;
+}
+.m-know .tag {
+  position: absolute; top: -13px; left: 18px;
+  background: var(--gold); color: var(--blue-deep);
+  font-family: var(--font-head); font-weight: 800; font-size: .68rem;
+  letter-spacing: .22em; text-transform: uppercase; padding: 5px 13px;
+}
+.m-know p { font-size: .99rem; }
+
+.m-quote { margin: 42px 0; padding-left: 26px; border-left: 4px solid var(--gold); }
+.m-quote p {
+  font-family: var(--font-head); font-stretch: 112%; font-weight: 700;
+  font-size: clamp(1.1rem, 2vw, 1.4rem); line-height: 1.4; color: var(--blue);
+}
+.m-quote cite {
+  display: block; margin-top: 10px; font-style: normal;
+  font-size: .72rem; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; opacity: .7;
+}
+
+.m-list { margin: 32px 0; }
+.m-list h4 {
+  font-family: var(--font-head); font-stretch: 112%; font-weight: 800;
+  text-transform: uppercase; letter-spacing: .06em; font-size: 1rem; margin-bottom: 10px; color: var(--blue);
+}
+.m-list ul { list-style: none; }
+.m-list li { padding: 10px 0 10px 24px; border-bottom: 1px solid var(--hair); position: relative; font-size: .98rem; }
+.m-list li::before { content: ""; position: absolute; left: 0; top: 17px; width: 9px; height: 9px; background: var(--gold); }
+.m-list li:last-child { border-bottom: 0; }
+
+/* ------------------------------------------------------------
    MAKING OF
    ------------------------------------------------------------ */
 .people-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 0; border: 1px solid var(--hair); border-right: 0; border-bottom: 0; }
