@@ -298,21 +298,18 @@ hr.rule { border: 0; border-top: 1px solid var(--hair); }
 
 .map-stop { cursor: pointer; }
 .map-stop circle.dot {
-  fill: var(--paper); stroke: var(--blue); stroke-width: 2;
-  transition: fill .15s, stroke .15s;
+  fill: var(--blue); stroke: var(--paper); stroke-width: 2;
+  transition: fill .15s;
 }
 .map-stop text {
-  fill: var(--blue); font-family: var(--font-head); font-weight: 800; font-size: 12.5px;
-  pointer-events: none; transition: fill .15s;
+  fill: #fff; font-family: var(--font-head); font-weight: 800; font-size: 12.5px;
+  pointer-events: none;
 }
-.map-stop:hover circle.dot, .map-stop.hl circle.dot { fill: var(--red); stroke: var(--red); }
-.map-stop:hover text, .map-stop.hl text { fill: #fff; }
+.map-stop:hover circle.dot, .map-stop.hl circle.dot { fill: var(--red); }
 
 /* postupné naskočenie bodov */
 .map-stop { opacity: 0; transform: scale(.2); transform-box: fill-box; transform-origin: center; transition: opacity .45s ease, transform .45s cubic-bezier(.2, 1.4, .4, 1); }
 svg.drawn .map-stop { opacity: 1; transform: scale(1); }
-
-#route { stroke-dasharray: 0 9; stroke-dashoffset: 0; }
 
 .stop-list { list-style: none; border-top: 1px solid var(--hair); counter-reset: none; }
 .stop-list a {

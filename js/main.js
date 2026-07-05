@@ -20,8 +20,8 @@ const stopList = document.getElementById("stop-list");
 
 // súradnice bodov na trase — presne podľa mapy na tabuliach
 const MAP_POINTS = [
-  [251, 169], [280, 86], [291, 112], [316, 107], [351, 121], [400, 125],
-  [438, 55], [429, 149], [404, 164], [390, 192], [316, 283], [231, 250]
+  [331, 189], [359, 107], [362, 122], [393, 121], [429, 141], [479, 143],
+  [518, 72], [509, 168], [482, 184], [469, 212], [390, 305], [304, 273]
 ];
 
 if (mapStops && stopList && typeof STOPS !== "undefined") {
