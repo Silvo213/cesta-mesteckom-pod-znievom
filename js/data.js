@@ -217,11 +217,15 @@ const STOPS = [
     id: "luky-nad-klastorom",
     num: 10,
     title: "Lúky nad Kláštorom",
-    short: "Krajina nad mestečkom — pastviny, potok a každodenný život Kláštorčanov.",
+    short: "Zelená lekáreň mestečka — lúky, z ktorých olejkári a bylinkárky po stáročia zbierali liečivé rastliny.",
     text: [
-      "[TEXT NA DOPLNENIE — pošlite mi fotografiu tabule alebo text tohto zastavenia a doplním ho.]"
+      "Lúky rozprestierajúce sa nad mestečkom boli po stáročia jeho zelenou lekárňou i špajzou. Kláštorčania na nich pásli dobytok a kosili seno, no predovšetkým tu od jari do jesene zbierali liečivé byliny. Keď jezuiti v roku 1586 založili pri kláštore najstaršiu botanickú záhradu na pestovanie liečivých rastlín, práve okolité lúky a stráne im poskytovali to, čo sa pestovať nedalo — bohatstvo divorastúcich druhov.",
+      "Z lúčnych bylín sa v kláštornej lekárni i v domácnostiach olejkárov pripravovali čaje, masti a povestné olejčeky. Medzi najvyhľadávanejšie patrili rebríček, ľubovník bodkovaný, materina dúška, repík či lipový kvet z neďalekej aleje. Bylinky sa sušili na povalách a v humnách a znievski olejkári ich potom spolu s liečivými prípravkami rozvážali po celom Uhorsku, Európe aj Ázii. Vedieť, ktorá rastlina lieči, kedy ju zbierať a ako ju uchovať, bolo umenie, ktoré sa v znievskych rodinách dedilo z pokolenia na pokolenie.",
+      "Kvetnaté lúky nad Kláštorom si svoju druhovú pestrosť zachovali dodnes — vďačia za ňu práve stáročiam pravidelného kosenia a pasenia. Ak sa na chvíľu zastavíte, nájdete tu voňavú živú učebnicu, z ktorej čerpali generácie olejkárov a bylinkárok."
     ],
-    persons: [],
+    persons: [
+      "znievski olejkári a bylinkárky — bezmenní nositelia liečiteľského umenia, ktoré preslávilo Kláštor pod Znievom v celej Európe"
+    ],
     scene: null,
     image: "img/luky-nad-klastorom.jpg",
     imageCaption: "Pohľad zo Skaličiek, v pozadí Tlstá a Ostrá",
