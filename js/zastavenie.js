@@ -16,7 +16,13 @@
 
   // video alebo zástupný rámik
   const frame = document.getElementById("video-frame");
-  if (stop.youtubeId) {
+  if (stop.videoFile) {
+    frame.innerHTML = `<video controls playsinline preload="none"
+      poster="${stop.videoPoster || ""}" title="Filmový príbeh: ${stop.title}">
+      <source src="${stop.videoFile}" type="video/mp4">
+      Váš prehliadač nepodporuje prehrávanie videa.
+    </video>`;
+  } else if (stop.youtubeId) {
     frame.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${stop.youtubeId}"
       title="Filmový príbeh: ${stop.title}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
   } else {
