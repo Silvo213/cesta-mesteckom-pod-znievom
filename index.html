@@ -82,82 +82,110 @@
       <div class="map-card frame reveal">
         <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
         <div class="map-title"><span>Cesta mestečkom pod Znievom</span><span class="dotleg"><i></i>vybrané</span></div>
-        <svg id="trail-map" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa okruhu s 12 zastaveniami">
-          <!-- kopce -->
-          <ellipse cx="72" cy="258" rx="98" ry="122" fill="#c9cde4" opacity=".55"/>
-          <ellipse cx="132" cy="366" rx="86" ry="88" fill="#aab3d8" opacity=".5"/>
-          <ellipse cx="568" cy="70" rx="64" ry="50" fill="#eef0f8"/>
-          <!-- hrad Zniev -->
-          <path d="M58 192 l16 -52 7 11 7 -20 7 20 7 -11 16 52 Z" fill="#20337a"/>
-          <rect x="71" y="182" width="34" height="14" fill="#20337a"/>
-          <!-- potok Vríca -->
-          <path d="M28 150 Q 160 128 300 140 Q 460 154 620 124" fill="none" stroke="#8fbcdc" stroke-width="5" stroke-linecap="round" opacity=".6"/>
-          <!-- kalvária na kopci -->
-          <g stroke="#20337a" stroke-width="2" stroke-linejoin="round">
-            <rect x="134" y="326" width="22" height="17" fill="#fff"/>
-            <path d="M131 326 L145 305 L159 326 Z" fill="#20337a"/>
-            <path d="M145 305 L145 297 M141 300 L149 300" fill="none" stroke-width="1.6"/>
-            <path d="M112 350 l4 -8 4 8 Z M166 352 l4 -8 4 8 Z" fill="#fff" stroke-width="1.4"/>
+        <svg id="trail-map" viewBox="0 0 640 330" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa okruhu s 12 zastaveniami — verná kresba mapy z tabúľ">
+          <!-- kopce vľavo s hradom Zniev (ako na tabuli: hrad na ľavom okraji) -->
+          <ellipse cx="18" cy="150" rx="62" ry="56" fill="#c9cde4"/>
+          <ellipse cx="55" cy="235" rx="58" ry="36" fill="#c9cde4"/>
+          <path d="M-4 168 L-4 128 L8 118 L14 130 L22 122 L30 140 L38 132 L42 168 Z" fill="#3a4470"/>
+          <!-- kopce vpravo hore -->
+          <ellipse cx="528" cy="40" rx="32" ry="23" fill="#c9cde4"/>
+          <ellipse cx="582" cy="46" rx="27" ry="20" fill="#c9cde4"/>
+          <!-- kalvária: kopec s tmavou kaplnkou (vľavo dole, pri 12) -->
+          <ellipse cx="192" cy="288" rx="58" ry="32" fill="#c9cde4"/>
+          <g>
+            <rect x="177" y="254" width="12" height="11" fill="#20337a"/>
+            <path d="M175 254 L183 242 L191 254 Z" fill="#20337a"/>
+            <rect x="182" y="238" width="2.6" height="6" fill="#f2b117"/>
+            <path d="M166 274 l3 -5 3 5 Z M199 278 l3 -5 3 5 Z M186 282 l3 -5 3 5 Z" fill="#fff" stroke="#aab3d8" stroke-width="1"/>
           </g>
-          <!-- kostol sv. Mikuláša (pri 2) -->
-          <g stroke="#20337a" stroke-width="2" stroke-linejoin="round">
-            <rect x="200" y="114" width="16" height="36" fill="#fff"/>
-            <path d="M197 114 L208 92 L219 114 Z" fill="#20337a"/>
-            <rect x="216" y="128" width="32" height="22" fill="#fff"/>
-            <path d="M213 128 L232 112 L251 128 Z" fill="#d8404a"/>
-          </g>
-          <!-- radové domčeky pri ulici -->
+          <!-- potok: tečie stredom, popri parkovisku a pri zastavení 10 (ako na tabuli) -->
+          <path d="M-4 176 Q 40 168 90 174 Q 150 182 210 170 Q 240 164 262 172 Q 300 186 340 180 Q 368 176 392 194 Q 420 214 462 204 Q 482 200 498 205" fill="none" stroke="#9fd3ee" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- malý potok vpravo hore -->
+          <path d="M436 26 Q 472 38 514 30 Q 556 23 610 40 Q 626 45 644 40" fill="none" stroke="#9fd3ee" stroke-width="3" stroke-linecap="round"/>
+          <!-- kostol sv. Mikuláša so zelenou strechou (veľký, nad 2) -->
           <g stroke="#20337a" stroke-width="1.8" stroke-linejoin="round">
-            <rect x="254" y="128" width="24" height="15" fill="#fff"/><path d="M251 128 L266 116 L281 128 Z" fill="#d8404a"/>
-            <rect x="286" y="134" width="24" height="15" fill="#fff"/><path d="M283 134 L298 122 L313 134 Z" fill="#f2b117"/>
-            <rect x="318" y="144" width="24" height="15" fill="#fff"/><path d="M315 144 L330 132 L345 144 Z" fill="#d8404a"/>
-            <rect x="252" y="186" width="26" height="16" fill="#fff"/><path d="M249 186 L265 173 L281 186 Z" fill="#f2b117"/>
-            <rect x="296" y="194" width="26" height="16" fill="#fff"/><path d="M293 194 L309 181 L325 194 Z" fill="#d8404a"/>
+            <rect x="246" y="26" width="17" height="62" fill="#fff"/>
+            <path d="M240 26 L254.5 4 L269 26 Z" fill="#79b5a1"/>
+            <rect x="252" y="0" width="2.6" height="7" fill="#20337a" stroke="none"/>
+            <rect x="263" y="52" width="58" height="36" fill="#fff"/>
+            <path d="M259 52 L292 30 L325 52 Z" fill="#79b5a1"/>
+            <path d="M252 40 h6 M252 60 h6 M274 64 h8 M290 64 h8 M306 64 h8" fill="none" stroke-width="1.4"/>
           </g>
-          <!-- tretia budova gymnázia (pri 6) -->
-          <g stroke="#20337a" stroke-width="2">
-            <rect x="356" y="124" width="68" height="38" fill="#fff"/>
-            <path d="M362 133 h56 M362 143 h56 M362 153 h56" fill="none" stroke-width="1.2"/>
+          <!-- domček s červenou strechou vpravo od kostola -->
+          <g stroke="#20337a" stroke-width="1.6" stroke-linejoin="round">
+            <rect x="306" y="76" width="22" height="13" fill="#fff"/>
+            <path d="M303 76 L317 65 L331 76 Z" fill="#d8404a"/>
           </g>
-          <!-- kláštor (pri 7) -->
-          <g stroke="#20337a" stroke-width="2" stroke-linejoin="round">
-            <rect x="497" y="58" width="82" height="34" fill="#fff"/>
-            <path d="M493 58 L538 42 L583 58 Z" fill="#20337a"/>
-            <rect x="481" y="46" width="16" height="46" fill="#fff"/>
-            <path d="M478 46 L489 24 L500 46 Z" fill="#20337a"/>
-            <path d="M506 68 h8 M520 68 h8 M534 68 h8 M548 68 h8 M562 68 h8" fill="none" stroke-width="1.5"/>
+          <!-- hasičská strážnica s vežičkou (pri 4) -->
+          <g stroke="#20337a" stroke-width="1.6" stroke-linejoin="round">
+            <rect x="320" y="112" width="22" height="14" fill="#fff"/>
+            <path d="M317 112 L331 101 L345 112 Z" fill="#d8404a"/>
+            <rect x="328" y="90" width="7" height="11" fill="#fff"/>
+            <path d="M326 90 Q 331.5 80 337 90 Z" fill="#d8404a"/>
           </g>
-          <!-- kúria (pri 8), dom olejkára (pri 9), dlhý dom (pri 10) -->
-          <g stroke="#20337a" stroke-width="1.8" stroke-linejoin="round">
-            <rect x="482" y="152" width="40" height="18" fill="#fff"/><path d="M479 152 L502 138 L525 152 Z" fill="#d8404a"/>
-            <rect x="426" y="196" width="42" height="18" fill="#fff"/><path d="M423 196 L447 182 L471 196 Z" fill="#f2b117"/>
-            <rect x="434" y="250" width="46" height="18" fill="#fff"/><path d="M431 250 L457 236 L483 250 Z" fill="#d8404a"/>
+          <!-- stromy pozdĺž ulice (2–6) -->
+          <g stroke="#20337a" stroke-width="1.5">
+            <line x1="299" y1="103" x2="299" y2="94"/><circle cx="299" cy="88" r="8" fill="#3f9e63"/>
+            <line x1="328" y1="126" x2="328" y2="118"/><circle cx="328" cy="112" r="8" fill="#3f9e63"/>
+            <line x1="352" y1="138" x2="352" y2="130"/><circle cx="352" cy="124" r="7.5" fill="#3f9e63"/>
+            <line x1="378" y1="140" x2="378" y2="132"/><circle cx="378" cy="126" r="7.5" fill="#3f9e63"/>
           </g>
-          <!-- lúky -->
-          <ellipse cx="430" cy="306" rx="44" ry="12" fill="#7fae8e" opacity=".55"/>
-          <ellipse cx="362" cy="338" rx="38" ry="11" fill="#3f9e63" opacity=".4"/>
-          <ellipse cx="474" cy="338" rx="30" ry="10" fill="#3f9e63" opacity=".3"/>
-          <!-- stromy -->
+          <!-- tretia budova gymnázia — dlhá svetlá budova (za 6) -->
           <g stroke="#20337a" stroke-width="1.8">
-            <line x1="244" y1="202" x2="244" y2="188"/><circle cx="244" cy="181" r="8" fill="#3f9e63"/>
-            <line x1="342" y1="214" x2="342" y2="200"/><circle cx="342" cy="193" r="8" fill="#3f9e63"/>
-            <line x1="368" y1="242" x2="368" y2="230"/><circle cx="368" cy="223" r="7" fill="#3f9e63"/>
-            <line x1="212" y1="310" x2="212" y2="298"/><circle cx="212" cy="291" r="7" fill="#3f9e63"/>
-            <line x1="502" y1="302" x2="502" y2="290"/><circle cx="502" cy="283" r="7" fill="#3f9e63"/>
+            <rect x="356" y="92" width="84" height="32" fill="#fff"/>
+            <path d="M362 100 h72 M362 108 h72 M362 116 h72" fill="none" stroke-width="1.1"/>
+            <rect x="392" y="116" width="8" height="8" fill="#f2b117" stroke-width="1.2"/>
+          </g>
+          <!-- kláštor: žltá budova + biela veža s červenou strechou (pri 7) -->
+          <g stroke="#20337a" stroke-width="1.8" stroke-linejoin="round">
+            <rect x="441" y="70" width="64" height="28" fill="#f6c94f"/>
+            <path d="M447 78 h52 M447 86 h52" fill="none" stroke-width="1.1"/>
+            <rect x="487" y="54" width="13" height="44" fill="#fff"/>
+            <path d="M484 54 L493.5 36 L503 54 Z" fill="#d8404a"/>
+          </g>
+          <!-- dom olejkára (pri 9) -->
+          <g stroke="#20337a" stroke-width="1.6" stroke-linejoin="round">
+            <rect x="366" y="156" width="38" height="12" fill="#fff"/>
+            <path d="M364 156 L385 148 L406 156 Z" fill="#8b93b8"/>
+          </g>
+          <!-- dlhá žltá budova s červenou strechou (pri 10) -->
+          <g stroke="#20337a" stroke-width="1.8" stroke-linejoin="round">
+            <rect x="412" y="170" width="60" height="20" fill="#f6c94f"/>
+            <path d="M409 170 L442 158 L475 170 Z" fill="#d8404a"/>
+            <path d="M418 176 h6 M428 176 h6 M438 176 h6 M448 176 h6 M458 176 h6" fill="none" stroke-width="1.2"/>
+          </g>
+          <!-- cintorín: krížiky pri zastavení 1 -->
+          <g stroke="#8a7358" stroke-width="2" stroke-linecap="round">
+            <path d="M216 178 L216 164 M211 168 L221 168"/>
+            <path d="M229 176 L229 160 M223.5 165 L234.5 165"/>
+            <path d="M240 178 L240 168 M236 171 L244 171"/>
+          </g>
+          <!-- lúky so steblami (vpravo dole) -->
+          <g>
+            <rect x="372" y="214" width="96" height="9" rx="4.5" fill="#3f9e63"/>
+            <rect x="396" y="228" width="106" height="9" rx="4.5" fill="#2e7d4f"/>
+            <rect x="360" y="240" width="70" height="8" rx="4" fill="#7fae8e"/>
+            <path d="M428 214 q-2 -12 4 -18 M436 214 q2 -10 -2 -16 M446 228 q-2 -12 4 -18 M456 228 q2 -10 -2 -16" fill="none" stroke="#dfe8c9" stroke-width="1.6"/>
           </g>
           <!-- bicykle -->
-          <g fill="none" stroke="#20337a" stroke-width="1.8">
-            <circle cx="534" cy="332" r="7"/><circle cx="552" cy="332" r="7"/>
-            <path d="M534 332 L542 320 L552 332 M542 320 L540 316 M537 316 h7"/>
-            <circle cx="568" cy="346" r="6"/><circle cx="584" cy="346" r="6"/>
-            <path d="M568 346 L575 336 L584 346 M575 336 L573 333 M570 333 h6"/>
+          <g fill="none" stroke="#20337a" stroke-width="1.7">
+            <circle cx="522" cy="216" r="7"/><circle cx="540" cy="216" r="7"/>
+            <path d="M522 216 L530 204 L540 216 M530 204 L528 200 M525 200 h7"/>
+            <circle cx="554" cy="228" r="6"/><circle cx="570" cy="228" r="6"/>
+            <path d="M554 228 L561 218 L570 228 M561 218 L559 215 M556 215 h6"/>
           </g>
-          <!-- trasa -->
-          <path id="route" d="M200 250 L200 178 L232 162 L262 158 L292 162 L322 176 L392 170 L520 118 L540 128 L470 178 L408 202 L398 228 L412 258 L400 300 L330 388 L262 396 L172 360 L172 292 Z"
-                fill="none" stroke="#20337a" stroke-width="3.5" stroke-dasharray="1 9" stroke-linecap="round"/>
+          <!-- turisti pri 11 -->
+          <g stroke="#20337a" stroke-width="1.7" stroke-linecap="round" fill="none">
+            <circle cx="312" cy="258" r="3"/><path d="M312 261 L312 272 M312 264 L306 269 M312 264 L318 269 M312 272 L308 280 M312 272 L316 280"/>
+            <circle cx="326" cy="260" r="3"/><path d="M326 263 L326 274 M326 266 L321 271 M326 266 L331 271 M326 274 L322 282 M326 274 L330 282"/>
+          </g>
+          <!-- trasa okruhu — presne podľa tabule -->
+          <path id="route" d="M254 180 L250 100 L280 86 L291 112 L316 107 L351 121 L400 125 L438 55 L429 149 L404 164 L390 192 L316 283 L231 250 Z"
+                fill="none" stroke="#20337a" stroke-width="3.2" stroke-dasharray="1 8" stroke-linecap="round"/>
+          <!-- parkovisko pod zastavením 1 -->
           <g>
-            <rect x="186" y="236" width="28" height="28" rx="6" fill="#20337a"/>
-            <text x="200" y="256" text-anchor="middle" fill="#fff" font-family="Archivo, sans-serif" font-weight="800" font-size="16">P</text>
+            <rect x="243" y="182" width="20" height="20" rx="4" fill="#20337a"/>
+            <text x="253" y="197" text-anchor="middle" fill="#fff" font-family="Archivo, sans-serif" font-weight="800" font-size="13">P</text>
           </g>
           <g id="map-stops"></g>
         </svg>

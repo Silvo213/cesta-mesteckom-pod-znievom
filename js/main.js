@@ -18,10 +18,10 @@ document.querySelectorAll(".reveal").forEach(el => io.observe(el));
 const mapStops = document.getElementById("map-stops");
 const stopList = document.getElementById("stop-list");
 
-// súradnice bodov na trase (poradie = číslo zastavenia)
+// súradnice bodov na trase — presne podľa mapy na tabuliach
 const MAP_POINTS = [
-  [200, 205], [232, 162], [262, 158], [292, 162], [322, 176], [392, 170],
-  [520, 118], [470, 178], [408, 202], [412, 258], [330, 388], [172, 320]
+  [251, 169], [280, 86], [291, 112], [316, 107], [351, 121], [400, 125],
+  [438, 55], [429, 149], [404, 164], [390, 192], [316, 283], [231, 250]
 ];
 
 if (mapStops && stopList && typeof STOPS !== "undefined") {
@@ -36,8 +36,8 @@ if (mapStops && stopList && typeof STOPS !== "undefined") {
     g.dataset.id = s.id;
     g.style.transitionDelay = (i * 80) + "ms";
     g.innerHTML =
-      `<circle class="dot" cx="${x}" cy="${y}" r="13"></circle>` +
-      `<text x="${x}" y="${y + 4.5}" text-anchor="middle">${s.num}</text>` +
+      `<circle class="dot" cx="${x}" cy="${y}" r="11"></circle>` +
+      `<text x="${x}" y="${y + 4}" text-anchor="middle" font-size="11.5">${s.num}</text>` +
       `<title>${s.num} – ${s.title}</title>`;
     g.addEventListener("click", () => { location.href = stopUrl(s); });
     mapStops.appendChild(g);
