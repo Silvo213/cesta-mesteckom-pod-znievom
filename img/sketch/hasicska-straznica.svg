@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="51" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="23" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="80" rx="270" ry="55" fill="#3a4b8f" opacity=".24"/>
+    <ellipse cx="300" cy="230" rx="80" ry="120" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="300" cy="150" rx="46" ry="30" fill="#d8404a" opacity=".42"/>
+    <ellipse cx="332" cy="278" rx="18" ry="16" fill="#f2b117" opacity=".6"/>
+    <ellipse cx="110" cy="290" rx="65" ry="80" fill="#7fae8e" opacity=".35"/>
+    <ellipse cx="500" cy="300" rx="55" ry="65" fill="#7fae8e" opacity=".3"/>
+    <ellipse cx="300" cy="405" rx="260" ry="30" fill="#b9c2e2" opacity=".3"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- kamenná podstava s bránou -->
+    <path d="M240 360 L240 292 L360 292 L360 360" stroke-width="3.6"/>
+    <path d="M280 360 L280 322 Q 300 306 320 322 L320 360" stroke-width="3"/>
+    <path d="M248 306 l14 10 M262 300 l12 10 M340 302 l12 10" stroke-width="1.6"/>
+    <!-- drevené poschodie s pavlačou -->
+    <path d="M232 292 L232 226 L368 226 L368 292" stroke-width="3.4"/>
+    <path d="M224 292 h152 M224 258 h152" stroke-width="2.6"/>
+    <path d="M240 258 v34 M256 258 v34 M272 258 v34 M288 258 v34 M312 258 v34 M328 258 v34 M344 258 v34 M358 258 v34" stroke-width="1.6"/>
+    <path d="M322 268 h20 v22 h-20 Z" stroke-width="2.2"/>
+    <!-- strecha a vežička -->
+    <path d="M218 228 L300 178 L382 228" stroke-width="3.6"/>
+    <path d="M286 192 L286 152 L314 152 L314 192" stroke-width="3"/>
+    <path d="M280 154 L300 122 L320 154" stroke-width="3.2" fill="#1d2f66" fill-opacity=".85"/>
+    <path d="M300 122 L300 108 M293 114 L307 114" stroke-width="2.4"/>
+    <!-- trúbka hlásnika -->
+    <path d="M410 262 q26 -8 44 -20 l0 14 q-20 10 -44 16 Z" stroke-width="2.4"/>
+    <path d="M462 234 q10 8 0 28" stroke-width="2.4"/>
+    <path d="M482 226 l10 -8 M488 244 l12 -2 M478 212 l6 -10" stroke-width="2"/>
+    <!-- stromy -->
+    <path d="M108 362 L108 296 q-30 -32 -2 -52 q32 -18 32 14 q26 12 -4 36 q-14 10 -26 2" stroke-width="2.8"/>
+    <path d="M498 360 L498 306 q-24 -26 -2 -42 q26 -14 26 12 q20 10 -4 28 q-10 8 -20 2" stroke-width="2.6"/>
+    <!-- zem -->
+    <path d="M40 374 Q 200 364 320 370 Q 460 376 566 366" stroke-width="2.6"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".55"><circle cx="90" cy="110" r="2.4"/><circle cx="540" cy="140" r="2"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="180" cy="120" r="2"/><circle cx="440" cy="100" r="2.2"/><circle cx="70" cy="390" r="2"/></g>
+  <g fill="#d8404a" opacity=".5"><circle cx="380" cy="140" r="1.8"/><circle cx="540" cy="386" r="2"/></g>
+</svg>

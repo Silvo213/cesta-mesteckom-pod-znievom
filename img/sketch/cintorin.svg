@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="21" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="80" rx="290" ry="70" fill="#3a4b8f" opacity=".28"/>
+    <ellipse cx="470" cy="70" rx="34" ry="30" fill="#f2b117" opacity=".5"/>
+    <ellipse cx="150" cy="270" rx="90" ry="90" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="360" cy="250" rx="70" ry="80" fill="#7d8fc7" opacity=".3"/>
+    <ellipse cx="300" cy="400" rx="270" ry="34" fill="#7fae8e" opacity=".22"/>
+    <ellipse cx="520" cy="240" rx="50" ry="90" fill="#b9c2e2" opacity=".35"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- mesiac -->
+    <circle cx="470" cy="70" r="20" stroke-width="2.4"/>
+    <!-- veľký náhrobok s krížom (Točekovci) -->
+    <path d="M270 356 L270 220 Q 300 196 330 220 L330 356" stroke-width="3.8"/>
+    <path d="M300 208 L300 156 M282 174 L318 174" stroke-width="4.2"/>
+    <path d="M278 250 h44 M278 268 h44 M282 286 h36" stroke-width="2"/>
+    <path d="M262 356 h76" stroke-width="3.4"/>
+    <!-- menšie náhrobky -->
+    <path d="M120 360 L120 292 Q 141 276 162 292 L162 360" stroke-width="3.2"/>
+    <path d="M141 284 L141 258 M130 268 L152 268" stroke-width="3"/>
+    <path d="M128 314 h26 M128 330 h26" stroke-width="1.8"/>
+    <path d="M420 362 L420 300 Q 439 286 458 300 L458 362" stroke-width="3"/>
+    <path d="M439 292 L439 270 M430 279 L448 279" stroke-width="2.6"/>
+    <path d="M508 364 L508 318 L544 318 L544 364" stroke-width="2.6"/>
+    <!-- strom -->
+    <path d="M58 366 L58 300 q-24 -30 0 -48 q26 -18 28 10 q20 10 -2 30 q-12 10 -26 8" stroke-width="2.8"/>
+    <!-- lampáš pri náhrobku -->
+    <path d="M362 362 L362 322 M354 322 h16 M354 322 L354 300 L370 300 L370 322 M358 296 h8" stroke-width="2.4"/>
+    <!-- tráva a zem -->
+    <path d="M40 372 Q 180 362 300 368 Q 440 374 560 366" stroke-width="2.6"/>
+    <path d="M92 384 l6 -10 M104 386 l6 -10 M196 388 l6 -10 M214 384 l6 -10 M382 388 l6 -10 M486 386 l6 -10" stroke-width="1.8"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".6"><ellipse cx="362" cy="311" rx="5" ry="7"/></g>
+  <g fill="#7d8fc7" opacity=".5">
+    <circle cx="90" cy="140" r="2.2"/><circle cx="540" cy="160" r="2"/><circle cx="210" cy="120" r="1.6"/>
+  </g>
+  <g fill="#b9c2e2" opacity=".6"><circle cx="330" cy="100" r="2.4"/><circle cx="60" cy="230" r="2"/></g>
+</svg>

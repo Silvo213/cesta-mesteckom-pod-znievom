@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="41" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="19" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="80" rx="260" ry="50" fill="#b9c2e2" opacity=".3"/>
+    <ellipse cx="300" cy="205" rx="200" ry="26" fill="#d8404a" opacity=".4"/>
+    <ellipse cx="300" cy="290" rx="210" ry="60" fill="#b9c2e2" opacity=".38"/>
+    <ellipse cx="90" cy="300" rx="60" ry="70" fill="#7fae8e" opacity=".4"/>
+    <ellipse cx="520" cy="310" rx="50" ry="55" fill="#7fae8e" opacity=".35"/>
+    <ellipse cx="300" cy="405" rx="260" ry="30" fill="#f2b117" opacity=".15"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- dlhá budova -->
+    <path d="M130 356 L130 236 L470 236 L470 356" stroke-width="3.6"/>
+    <path d="M120 238 L136 210 L464 210 L480 238" stroke-width="3.4"/>
+    <!-- štít nad vchodom -->
+    <path d="M262 236 L300 200 L338 236" stroke-width="3.2"/>
+    <path d="M300 208 L300 196 M294 200 L306 200" stroke-width="2.2"/>
+    <!-- vchod a okná -->
+    <path d="M284 356 L284 292 Q 300 280 316 292 L316 356" stroke-width="3"/>
+    <path d="M152 262 h30 v36 h-30 Z M210 262 h30 v36 h-30 Z" stroke-width="2.2"/>
+    <path d="M360 262 h30 v36 h-30 Z M418 262 h30 v36 h-30 Z" stroke-width="2.2"/>
+    <path d="M167 262 v36 M225 262 v36 M375 262 v36 M433 262 v36" stroke-width="1.4"/>
+    <!-- busta pred budovou -->
+    <path d="M520 358 L520 320 L544 320 L544 358" stroke-width="2.6"/>
+    <path d="M532 318 q-10 -4 -6 -14 q4 -10 12 -6 q8 4 4 12 q-2 8 -10 8" stroke-width="2.2"/>
+    <!-- strom -->
+    <path d="M84 362 L84 300 q-28 -30 -2 -50 q30 -18 30 14 q24 12 -4 34 q-12 10 -24 2" stroke-width="2.8"/>
+    <!-- zem a chodník -->
+    <path d="M40 372 Q 200 362 320 368 Q 460 374 566 366" stroke-width="2.6"/>
+    <path d="M270 400 Q 300 392 330 400" stroke-width="2" stroke-dasharray="2 10"/>
+  </g>
+
+  <g fill="#7d8fc7" opacity=".5"><circle cx="100" cy="130" r="2.2"/><circle cx="520" cy="130" r="2"/><circle cx="560" cy="380" r="2.2"/></g>
+  <g fill="#d8404a" opacity=".5"><circle cx="330" cy="110" r="1.8"/><circle cx="60" cy="390" r="2"/></g>
+  <g fill="#f2b117" opacity=".5"><circle cx="450" cy="120" r="2"/></g>
+</svg>

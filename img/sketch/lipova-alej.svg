@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="61" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="27" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="140" cy="150" rx="110" ry="80" fill="#7fae8e" opacity=".45"/>
+    <ellipse cx="450" cy="140" rx="120" ry="75" fill="#7fae8e" opacity=".4"/>
+    <ellipse cx="300" cy="110" rx="90" ry="55" fill="#f2b117" opacity=".3"/>
+    <ellipse cx="255" cy="180" rx="50" ry="40" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="300" cy="380" rx="240" ry="40" fill="#7d8fc7" opacity=".3"/>
+    <ellipse cx="300" cy="300" rx="60" ry="16" fill="#b9c2e2" opacity=".5"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- mohutné kmene v perspektíve -->
+    <path d="M96 372 L104 220 M148 372 L140 224" stroke-width="4.2"/>
+    <path d="M96 300 q-20 -14 -30 -34 M146 290 q18 -12 26 -30" stroke-width="2.8"/>
+    <path d="M196 360 L202 248 M232 360 L226 250" stroke-width="3.4"/>
+    <path d="M262 348 L266 268 M286 348 L282 270" stroke-width="2.8"/>
+    <path d="M312 340 L314 284 M328 340 L326 286" stroke-width="2.4"/>
+    <path d="M420 360 L414 250 M452 360 L458 252" stroke-width="3.4"/>
+    <path d="M492 372 L498 226 M540 372 L532 230" stroke-width="4"/>
+    <!-- koruny — čmáranice -->
+    <path d="M70 210 q30 -60 90 -44 q50 -34 92 6 q60 -20 78 30" stroke-width="2.4"/>
+    <path d="M330 200 q40 -44 92 -24 q54 -26 96 18 q30 8 30 34" stroke-width="2.4"/>
+    <path d="M110 180 q26 -18 48 -2 M400 176 q30 -20 56 0" stroke-width="1.8"/>
+    <!-- kanál Vríce -->
+    <path d="M180 372 Q 300 344 420 372" stroke-width="2.8"/>
+    <path d="M208 386 Q 300 362 392 386" stroke-width="2.4"/>
+    <path d="M250 372 q14 -6 28 0 M320 368 q14 -6 28 0" stroke-width="1.6"/>
+    <!-- lavička -->
+    <path d="M254 322 h60 M260 322 v18 M308 322 v18 M254 312 h60" stroke-width="2.4"/>
+    <!-- zem -->
+    <path d="M40 376 Q 160 368 260 372 M340 372 Q 460 368 566 374" stroke-width="2.4"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".55"><circle cx="300" cy="70" r="2.6"/><circle cx="180" cy="90" r="2"/><circle cx="430" cy="80" r="2.2"/></g>
+  <g fill="#7fae8e" opacity=".6"><circle cx="240" cy="110" r="2.4"/><circle cx="510" cy="110" r="2"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="80" cy="330" r="2.2"/><circle cx="540" cy="330" r="2"/></g>
+</svg>

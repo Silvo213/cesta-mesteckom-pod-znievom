@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="31" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="14" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="480" cy="80" rx="46" ry="40" fill="#f2b117" opacity=".5"/>
+    <ellipse cx="250" cy="90" rx="180" ry="46" fill="#b9c2e2" opacity=".3"/>
+    <ellipse cx="215" cy="220" rx="46" ry="120" fill="#7d8fc7" opacity=".35"/>
+    <ellipse cx="360" cy="280" rx="110" ry="70" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="330" cy="215" rx="60" ry="20" fill="#d8404a" opacity=".45"/>
+    <ellipse cx="80" cy="330" rx="55" ry="45" fill="#7fae8e" opacity=".4"/>
+    <ellipse cx="300" cy="408" rx="270" ry="30" fill="#b9c2e2" opacity=".3"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- veža -->
+    <path d="M186 356 L186 160 L248 160 L248 356" stroke-width="3.8"/>
+    <path d="M178 162 L217 84 L256 162" stroke-width="3.8" fill="#1d2f66" fill-opacity=".85"/>
+    <path d="M217 84 L217 66 M208 74 L226 74" stroke-width="2.8"/>
+    <path d="M206 190 Q 217 178 228 190 L228 216 L206 216 Z" stroke-width="2.4"/>
+    <path d="M206 250 Q 217 240 228 250 L228 272 L206 272 Z" stroke-width="2.2"/>
+    <!-- slnečné hodiny na veži -->
+    <circle cx="217" cy="310" r="17" stroke-width="2.2"/>
+    <path d="M217 310 L228 300 M217 310 L217 296 M217 310 L206 300" stroke-width="1.6"/>
+    <!-- loď kostola -->
+    <path d="M248 232 L436 232 L436 356" stroke-width="3.4"/>
+    <path d="M242 232 L340 186 L442 232" stroke-width="3.6"/>
+    <path d="M280 268 Q 290 258 300 268 L300 300 L280 300 Z" stroke-width="2.2"/>
+    <path d="M330 268 Q 340 258 350 268 L350 300 L330 300 Z" stroke-width="2.2"/>
+    <path d="M380 268 Q 390 258 400 268 L400 300 L380 300 Z" stroke-width="2.2"/>
+    <!-- ohrada -->
+    <path d="M460 356 L460 330 M480 356 L480 328 M500 356 L500 330 M520 356 L520 328 M452 336 L530 332" stroke-width="2.2"/>
+    <!-- strom -->
+    <path d="M80 360 L80 302 q-26 -28 -2 -46 q28 -16 28 12 q22 12 -2 32 q-12 10 -24 2" stroke-width="2.8"/>
+    <!-- zem -->
+    <path d="M40 372 Q 200 362 340 368 Q 470 374 566 364" stroke-width="2.6"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".5"><circle cx="520" cy="140" r="2.4"/><circle cx="70" cy="120" r="2"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="140" cy="110" r="2"/><circle cx="560" cy="300" r="2.4"/><circle cx="480" cy="392" r="2"/></g>
+  <g fill="#d8404a" opacity=".45"><circle cx="300" cy="130" r="1.8"/></g>
+</svg>

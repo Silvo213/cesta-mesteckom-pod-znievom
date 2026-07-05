@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="141" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="67" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="80" rx="270" ry="55" fill="#3a4b8f" opacity=".22"/>
+    <path d="M420 170 L330 330 L540 330 Z" fill="#f2b117" opacity=".3"/>
+    <ellipse cx="160" cy="260" rx="70" ry="90" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="452" cy="290" rx="46" ry="60" fill="#7d8fc7" opacity=".35"/>
+    <ellipse cx="466" cy="238" rx="16" ry="12" fill="#d8404a" opacity=".5"/>
+    <ellipse cx="300" cy="405" rx="270" ry="30" fill="#b9c2e2" opacity=".3"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- kamera na statíve -->
+    <path d="M120 250 L196 250 L196 202 L120 202 Z" stroke-width="3.2"/>
+    <path d="M196 214 L226 200 L226 244 L196 232" stroke-width="2.8"/>
+    <path d="M132 202 q0 -22 22 -22 q22 0 22 22" stroke-width="2.6"/>
+    <path d="M140 190 q8 -10 18 -4" stroke-width="1.6"/>
+    <path d="M158 250 L120 356 M158 250 L196 356 M158 250 L158 340" stroke-width="2.8"/>
+    <path d="M136 316 h44" stroke-width="2"/>
+    <!-- kameraman -->
+    <path d="M92 280 q-2 -16 12 -16 q14 0 12 16 q10 4 8 14 l-16 2" stroke-width="2.4"/>
+    <path d="M96 296 q-8 26 -4 60 M112 298 q6 26 4 58" stroke-width="2.4"/>
+    <path d="M104 296 L128 254" stroke-width="2.2"/>
+    <!-- herec s lampášom a cylindrom -->
+    <path d="M444 250 q-2 -14 11 -14 q13 0 11 14" stroke-width="2.4"/>
+    <path d="M438 236 h34 M444 236 L444 222 L466 222 L466 236" stroke-width="2.6"/>
+    <path d="M440 266 q-10 40 -6 92 M470 266 q8 40 6 90" stroke-width="2.6"/>
+    <path d="M448 268 L420 306 M462 268 L494 296" stroke-width="2.4"/>
+    <path d="M494 296 L494 320 M486 320 h16 M486 320 L486 340 L502 340 L502 320" stroke-width="2.2"/>
+    <!-- klapka -->
+    <path d="M280 330 L280 296 L344 296 L344 330 Z" stroke-width="2.8"/>
+    <path d="M278 296 L282 280 L346 284 L344 296" stroke-width="2.6"/>
+    <path d="M286 282 l8 12 M300 282 l8 12 M314 284 l8 12 M328 284 l8 12" stroke-width="2"/>
+    <!-- svetlo na statíve -->
+    <path d="M548 232 q-18 -4 -22 -22 q16 -8 26 6 q6 10 -4 16" stroke-width="2.6"/>
+    <path d="M540 240 L540 340 M524 356 L540 340 L556 356" stroke-width="2.4"/>
+    <!-- káble -->
+    <path d="M200 360 q40 14 84 6 q50 -8 96 4" stroke-width="1.8"/>
+    <!-- zem -->
+    <path d="M40 374 Q 200 366 320 370 Q 460 376 566 366" stroke-width="2.6"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".6"><ellipse cx="494" cy="330" rx="5" ry="7"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="90" cy="130" r="2.2"/><circle cx="540" cy="120" r="2"/><circle cx="60" cy="390" r="2"/></g>
+  <g fill="#d8404a" opacity=".5"><circle cx="300" cy="110" r="1.8"/><circle cx="560" cy="390" r="2"/></g>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <!-- akvarelové škvrny -->
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="70" rx="270" ry="48" fill="#b9c2e2" opacity=".32"/>
+    <ellipse cx="115" cy="255" rx="120" ry="105" fill="#b9c2e2" opacity=".5"/>
+    <ellipse cx="150" cy="300" rx="70" ry="60" fill="#7d8fc7" opacity=".3"/>
+    <ellipse cx="278" cy="205" rx="26" ry="30" fill="#7d8fc7" opacity=".45"/>
+    <ellipse cx="367" cy="252" rx="34" ry="16" fill="#d8404a" opacity=".5"/>
+    <ellipse cx="437" cy="247" rx="30" ry="15" fill="#f2b117" opacity=".5"/>
+    <ellipse cx="512" cy="228" rx="46" ry="18" fill="#7d8fc7" opacity=".45"/>
+    <ellipse cx="205" cy="330" rx="26" ry="22" fill="#7fae8e" opacity=".5"/>
+    <ellipse cx="470" cy="320" rx="24" ry="20" fill="#7fae8e" opacity=".45"/>
+    <ellipse cx="300" cy="420" rx="270" ry="38" fill="#f2b117" opacity=".16"/>
+    <ellipse cx="90" cy="415" rx="90" ry="24" fill="#b9c2e2" opacity=".3"/>
+  </g>
+
+  <!-- tušová kresba -->
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- hrad Zniev na kopci -->
+    <path d="M68 212 L84 158 L92 170 L100 148 L108 170 L116 158 L132 212" stroke-width="3.4" fill="#1d2f66" fill-opacity=".85"/>
+    <path d="M40 262 Q 100 196 168 250" stroke-width="2.4"/>
+    <!-- kostol sv. Mikuláša -->
+    <path d="M262 168 L262 262 L296 262 L296 168" stroke-width="3.6"/>
+    <path d="M256 170 L279 122 L302 170" stroke-width="3.6" fill="#1d2f66" fill-opacity=".9"/>
+    <path d="M279 122 L279 108 M272 114 L286 114" stroke-width="2.6"/>
+    <path d="M296 218 L352 218 L352 262" stroke-width="3.2"/>
+    <path d="M292 218 L326 196 L358 218" stroke-width="3.4"/>
+    <path d="M274 196 L284 196 L284 214 L274 214 Z" stroke-width="2.2"/>
+    <!-- rad domov -->
+    <path d="M352 262 L352 232 L382 214 L412 232 L412 262" stroke-width="3"/>
+    <path d="M412 258 L412 234 L442 218 L470 234 L470 258" stroke-width="3"/>
+    <path d="M470 258 L470 236 L500 254 L556 250 L556 262" stroke-width="2.8"/>
+    <path d="M480 214 L480 262 M540 224 L540 260" stroke-width="2.6"/>
+    <path d="M366 240 h12 M390 240 h12 M426 240 h12 M448 240 h10" stroke-width="2"/>
+    <!-- stromy -->
+    <path d="M205 358 L205 322 M205 322 q-20 -26 2 -40 q24 -12 22 14 q16 10 -6 26 q-10 6 -18 0" stroke-width="2.6"/>
+    <path d="M470 344 L470 316 q-16 -20 2 -30 q20 -10 18 12 q12 8 -4 20 q-8 4 -16 -2" stroke-width="2.4"/>
+    <!-- zem a cesta -->
+    <path d="M36 372 Q 140 362 260 368 M300 370 Q 430 360 566 368" stroke-width="2.6"/>
+    <path d="M90 414 Q 220 396 330 402 Q 450 408 540 392" stroke-width="2.2" stroke-dasharray="2 12"/>
+    <!-- postavičky -->
+    <path d="M330 350 q4 -14 10 0 q8 2 0 6 q-8 16 -10 0 q-6 -3 0 -6" stroke-width="2"/>
+    <path d="M356 352 q3 -12 9 0 q7 2 0 5 q-7 14 -9 0 q-5 -2 0 -5" stroke-width="2"/>
+  </g>
+
+  <!-- fŕkance -->
+  <g fill="#7d8fc7" opacity=".55">
+    <circle cx="86" cy="120" r="2.4"/><circle cx="520" cy="150" r="1.8"/><circle cx="560" cy="330" r="2.6"/>
+    <circle cx="60" cy="350" r="2"/><circle cx="330" cy="90" r="1.6"/>
+  </g>
+  <g fill="#f2b117" opacity=".5"><circle cx="470" cy="110" r="2.2"/><circle cx="150" cy="392" r="2.4"/></g>
+  <g fill="#d8404a" opacity=".45"><circle cx="390" cy="120" r="1.8"/><circle cx="240" cy="300" r="1.6"/></g>
+</svg>

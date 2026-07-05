@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cesta mestečkom pod Znievom — náučný chodník</title>
+  <meta name="description" content="Inovatívny náučný chodník v Kláštore pod Znievom. 12 zastavení, filmové príbehy z histórie mestečka, kvíz a pohľad do zákulisia natáčania.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="k">K</span>LÁŠTOR<small>POD ZNIEVOM</small></a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Chodník</a></li>
+      <li><a href="index.html#zastavenia">Zastavenia</a></li>
+      <li><a href="making-of.html">Making of</a></li>
+      <li><a href="kviz.html" class="cta">Kvíz</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="label">Náučný chodník · Kláštor pod Znievom</span>
+        <h1 class="display-xl">Cesta<br>mestečkom<br><em>pod Znievom</em></h1>
+        <p class="lead">Dvanásť zastavení, dvanásť príbehov. Históriu mestečka pod hradom Zniev
+          vám nevyrozpráva učebnica, ale postavy, ktoré ju naozaj žili — vo filmových
+          príbehoch nakrútených priamo tu.</p>
+        <div class="hero-actions">
+          <a class="btn btn-solid" href="#zastavenia">Objaviť zastavenia</a>
+          <a class="btn" href="making-of.html">Ako vznikali filmy</a>
+        </div>
+        <div class="hero-meta">
+          <span><i></i>12 zastavení</span>
+          <span><i></i>Filmové príbehy</span>
+          <span><i></i>Okruh ~3 km</span>
+        </div>
+      </div>
+
+      <figure class="hero-art" aria-hidden="true">
+        <img src="img/sketch/uvod.svg" alt="Skica mestečka pod Znievom" class="sketch-img">
+        <figcaption><span>Mestečko pod Znievom</span><span>okruh · 12 zastavení</span></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Cesta mestečkom pod Znievom</span><span>12 zastavení</span><span>Filmové príbehy</span><span>Zoborské listiny 1113</span><span>Olejkári a papierne</span><span>Prvé slovenské gymnázium 1869</span>
+    <span>Cesta mestečkom pod Znievom</span><span>12 zastavení</span><span>Filmové príbehy</span><span>Zoborské listiny 1113</span><span>Olejkári a papierne</span><span>Prvé slovenské gymnázium 1869</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="stats reveal">
+      <div class="stat"><b>12</b><span>zastavení na okruhu</span></div>
+      <div class="stat"><b>9+</b><span>filmových príbehov</span></div>
+      <div class="stat"><b>1113</b><span>prvá písomná zmienka</span></div>
+      <div class="stat"><b>~3<small style="font-size:.45em"> km</small></b><span>pešo mestečkom</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="ako" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">Ako chodník funguje</span>
+      <h2 class="display-lg">História, ktorú si<br>pozriete ako film</h2>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><span class="ghost-num">01</span><h3>Prejdite sa okruhom</h3><p>Trasa vedie okolo najvýznamnejších budov a miest mestečka — od cintorína cez kláštor až po kalváriu.</p></div>
+      <div class="step reveal"><span class="ghost-num">02</span><h3>Naskenujte QR kód</h3><p>Na každej tabuli nájdete QR kód, ktorý vás prenesie na stránku zastavenia s filmovým príbehom.</p></div>
+      <div class="step reveal"><span class="ghost-num">03</span><h3>Pozrite si príbeh</h3><p>Históriu vám vyrozprávajú postavy, ktoré ju žili — richtár, mních olejkár, astronómka či nočný hlásnik.</p></div>
+      <div class="step reveal"><span class="ghost-num">04</span><h3>Otestujte sa</h3><p>Na konci cesty si v kvíze overte, koľko ste si zapamätali — a získajte titul čestného Znievčana.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="zastavenia" style="padding-top:0">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="label">Okruh mestečkom</span>
+      <h2 class="display-lg">12 zastavení</h2>
+    </div>
+    <div class="map-grid">
+      <div class="map-card frame reveal">
+        <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+        <div class="map-title"><span>Cesta mestečkom pod Znievom</span><span class="dotleg"><i></i>vybrané</span></div>
+        <svg id="trail-map" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa okruhu s 12 zastaveniami">
+          <g opacity=".55">
+            <ellipse cx="80" cy="270" rx="90" ry="120" fill="#eef0f8"/>
+            <ellipse cx="80" cy="270" rx="90" ry="120" fill="url(#hatch2)"/>
+            <ellipse cx="140" cy="360" rx="80" ry="90" fill="#c9cde4"/>
+            <ellipse cx="560" cy="90" rx="70" ry="60" fill="#eef0f8"/>
+            <path d="M60 190 l16 -52 7 11 7 -20 7 20 7 -11 16 52 Z" fill="#20337a"/>
+            <rect x="73" y="180" width="34" height="14" fill="#20337a"/>
+          </g>
+          <defs>
+            <pattern id="hatch2" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+              <line x1="0" y1="0" x2="0" y2="7" stroke="#20337a" stroke-width="1" opacity=".3"/>
+            </pattern>
+          </defs>
+          <path d="M40 140 Q 200 120 340 132 Q 480 144 620 118" fill="none" stroke="#8fbcdc" stroke-width="5" stroke-linecap="round" opacity=".55"/>
+          <path id="route" d="M200 250 L200 178 L232 162 L262 158 L292 162 L322 176 L392 170 L520 118 L540 128 L470 178 L408 202 L398 228 L412 258 L400 300 L330 388 L262 396 L172 360 L172 292 Z"
+                fill="none" stroke="#20337a" stroke-width="3.5" stroke-dasharray="1 9" stroke-linecap="round"/>
+          <g>
+            <rect x="186" y="236" width="28" height="28" rx="6" fill="#20337a"/>
+            <text x="200" y="256" text-anchor="middle" fill="#fff" font-family="Archivo, sans-serif" font-weight="800" font-size="16">P</text>
+          </g>
+          <g id="map-stops"></g>
+        </svg>
+      </div>
+      <ol class="stop-list reveal" id="stop-list"><!-- naplní js/main.js --></ol>
+    </div>
+  </div>
+</section>
+
+<section class="panorama">
+  <div class="wrap">
+    <figure class="frame reveal">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <div class="engrave pano-img"><img src="img/pohlad-na-klastor.jpg" alt="Pohľad na Kláštor pod Znievom z vyhliadky" loading="lazy"></div>
+      <figcaption class="pano-caption"><span>Mestečko pod hradom Zniev</span><span>Kláštor pod Znievom</span></figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="timeline-section">
+  <div class="wrap" style="padding-top:clamp(50px,6vw,80px)">
+    <div class="section-head reveal" style="margin-bottom:34px">
+      <span class="label">Príbeh v dátumoch</span>
+      <h2 class="display-lg">900 rokov mestečka</h2>
+    </div>
+  </div>
+  <div class="timeline reveal" id="timeline">
+    <div class="t-item"><div class="year">1113</div><h3>Zoborské listiny</h3><p>Najstarší písomný prameň k dejinám Turca spomína kláštor benediktínov s kostolom sv. Hypolita.</p></div>
+    <div class="t-item"><div class="year">1252</div><h3>Premonštráti</h3><p>Kláštor preberá Rád premonštrátov. Ich kamenná huta vybudovala väčšinu gotických kostolov v Turci.</p></div>
+    <div class="t-item"><div class="year">1266</div><h3>Mestské práva</h3><p>Kláštor pod Znievom sa stáva kráľovským mestečkom — práva si udrží celé štyri storočia.</p></div>
+    <div class="t-item"><div class="year">1586</div><h3>Prichádzajú jezuiti</h3><p>Kláštor prestavujú do renesančnej podoby a zakladajú najstaršiu botanickú záhradu na liečivé rastliny.</p></div>
+    <div class="t-item"><div class="year">1656</div><h3>Kanál a papierne</h3><p>Umelé koryto Vríce napája rybníky, poháňa mlyn a zásobuje najstaršie uhorské papierne.</p></div>
+    <div class="t-item"><div class="year">1666</div><h3>Poprava richtára</h3><p>Počas rebélie voči jezuitom je popravený richtár Ján Kužel. Mestečko prichádza o mestské práva.</p></div>
+    <div class="t-item"><div class="year">1728</div><h3>Kalvária</h3><p>Jezuiti stavajú kostol Sv. Kríža s osemuholníkovým múrom, tromi bránami a šiestimi kaplnkami.</p></div>
+    <div class="t-item"><div class="year">1816</div><h3>Biskup Kluch</h3><p>Znievsky rodák, nitriansky biskup Jozef Kluch, obnovuje poškodenú kalváriu z vlastných prostriedkov.</p></div>
+    <div class="t-item"><div class="year">1869</div><h3>Slovenské gymnázium</h3><p>3. októbra sa otvára prvé slovenské katolícke patronátne gymnázium na čele s Martinom Čulenom.</p></div>
+    <div class="t-item"><div class="year">1874</div><h3>Zatvorenie školy</h3><p>Ministerský dekrét ukončuje činnosť gymnázia — oficiálne pre „hygienické podmienky“.</p></div>
+    <div class="t-item"><div class="year">1936</div><h3>Funkcionalizmus</h3><p>Otvára sa tretia budova gymnázia, jedna z najmodernejších škôl republiky. Pozdravil ju aj prezident Beneš.</p></div>
+    <div class="t-item"><div class="year">1959</div><h3>Odchod gymnázia</h3><p>Gymnázium sa sťahuje do Turčianskych Teplíc. Pokračovateľkou sa stáva základná škola, ktorá tu sídli dodnes.</p></div>
+  </div>
+  <div class="wrap"><p class="t-hint">Potiahnite do strán →</p></div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="bigcta">
+      <a href="making-of.html" class="reveal">
+        <div>
+          <div class="t">Making of</div>
+          <small>Kto stojí za kamerou, kto si obliekol biskupské rúcho a čo všetko sa pri natáčaní (ne)podarilo.</small>
+        </div>
+        <span class="go">→</span>
+      </a>
+      <a href="kviz.html" class="reveal">
+        <div>
+          <div class="t">Znievsky kvíz</div>
+          <small>10 otázok z príbehov chodníka. Získajte titul čestného Znievčana.</small>
+        </div>
+        <span class="go">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="index.html"><span class="k">K</span>LÁŠTOR<small>POD ZNIEVOM</small></a>
+      <nav>
+        <a href="index.html#zastavenia">Zastavenia</a>
+        <a href="making-of.html">Making of</a>
+        <a href="kviz.html">Kvíz</a>
+      </nav>
+    </div>
+    <p class="footer-note"><span>© Kláštor pod Znievom</span><span>Náučný chodník · Cesta mestečkom pod Znievom</span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

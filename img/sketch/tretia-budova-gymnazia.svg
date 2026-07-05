@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="71" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="33" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="75" rx="270" ry="50" fill="#b9c2e2" opacity=".32"/>
+    <ellipse cx="320" cy="270" rx="220" ry="80" fill="#b9c2e2" opacity=".38"/>
+    <ellipse cx="200" cy="250" rx="60" ry="90" fill="#7d8fc7" opacity=".28"/>
+    <ellipse cx="90" cy="320" rx="55" ry="55" fill="#7fae8e" opacity=".4"/>
+    <ellipse cx="300" cy="408" rx="260" ry="28" fill="#f2b117" opacity=".16"/>
+    <ellipse cx="132" cy="150" rx="16" ry="26" fill="#d8404a" opacity=".5"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- funkcionalistická budova -->
+    <path d="M160 358 L160 190 L520 190 L520 358" stroke-width="3.8"/>
+    <path d="M152 190 h376" stroke-width="3"/>
+    <!-- pásové okná -->
+    <path d="M180 214 h150 v26 h-150 Z M350 214 h150 v26 h-150 Z" stroke-width="2.2"/>
+    <path d="M180 262 h150 v26 h-150 Z M350 262 h150 v26 h-150 Z" stroke-width="2.2"/>
+    <path d="M180 310 h150 v26 h-150 Z M350 310 h150 v26 h-150 Z" stroke-width="2.2"/>
+    <path d="M210 214 v26 M240 214 v26 M270 214 v26 M300 214 v26 M380 214 v26 M410 214 v26 M440 214 v26 M470 214 v26" stroke-width="1.2"/>
+    <path d="M210 262 v26 M240 262 v26 M270 262 v26 M300 262 v26 M380 262 v26 M410 262 v26 M440 262 v26 M470 262 v26" stroke-width="1.2"/>
+    <path d="M210 310 v26 M240 310 v26 M270 310 v26 M300 310 v26 M380 310 v26 M410 310 v26 M440 310 v26 M470 310 v26" stroke-width="1.2"/>
+    <!-- vchod so schodmi -->
+    <path d="M322 358 L322 322 L348 322 L348 358 M314 358 h42 M310 366 h50" stroke-width="2.6"/>
+    <!-- vlajka -->
+    <path d="M132 358 L132 120" stroke-width="2.8"/>
+    <path d="M132 124 q22 4 34 -2 l0 26 q-14 6 -34 2" stroke-width="2.2"/>
+    <!-- strom -->
+    <path d="M86 362 L86 312 q-24 -26 -2 -42 q26 -14 26 12 q20 10 -4 28 q-10 8 -20 2" stroke-width="2.6"/>
+    <!-- zem -->
+    <path d="M40 374 Q 200 366 320 370 Q 460 376 566 366" stroke-width="2.6"/>
+    <path d="M240 396 Q 340 388 440 396" stroke-width="2" stroke-dasharray="2 10"/>
+  </g>
+
+  <g fill="#7d8fc7" opacity=".5"><circle cx="90" cy="110" r="2.2"/><circle cx="560" cy="150" r="2"/><circle cx="550" cy="390" r="2.2"/></g>
+  <g fill="#f2b117" opacity=".5"><circle cx="480" cy="110" r="2.2"/><circle cx="60" cy="250" r="2"/></g>
+  <g fill="#d8404a" opacity=".45"><circle cx="400" cy="120" r="1.8"/></g>
+</svg>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Znievsky kvíz — Cesta mestečkom pod Znievom</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><span class="k">K</span>LÁŠTOR<small>POD ZNIEVOM</small></a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-links">
+      <li><a href="index.html">Chodník</a></li>
+      <li><a href="index.html#zastavenia">Zastavenia</a></li>
+      <li><a href="making-of.html">Making of</a></li>
+      <li><a href="kviz.html" class="cta active">Kvíz</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="page-head">
+  <div class="wrap">
+    <span class="bignum ghost-num">?</span>
+    <p class="breadcrumbs"><a href="index.html">Chodník</a> / Kvíz</p>
+    <span class="label">Otestujte sa</span>
+    <h1 class="display-xl">Znievsky kvíz</h1>
+    <p class="lead intro">Desať otázok z príbehov chodníka. Prešli ste všetkých dvanásť zastavení
+    a pozorne počúvali richtára, mnícha aj astronómku? Dokážte to.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="quiz-shell wrap">
+    <div class="quiz-card frame">
+      <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+      <div id="quiz"><!-- naplní js/kviz.js --></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <a class="brand" href="index.html"><span class="k">K</span>LÁŠTOR<small>POD ZNIEVOM</small></a>
+      <nav>
+        <a href="index.html#zastavenia">Zastavenia</a>
+        <a href="making-of.html">Making of</a>
+        <a href="kviz.html">Kvíz</a>
+      </nav>
+    </div>
+    <p class="footer-note"><span>© Kláštor pod Znievom</span><span>Náučný chodník · Cesta mestečkom pod Znievom</span></p>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/kviz.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="101" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="47" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="78" rx="260" ry="48" fill="#b9c2e2" opacity=".3"/>
+    <ellipse cx="300" cy="200" rx="220" ry="34" fill="#d8404a" opacity=".42"/>
+    <ellipse cx="300" cy="290" rx="220" ry="60" fill="#b9c2e2" opacity=".35"/>
+    <ellipse cx="262" cy="322" rx="30" ry="36" fill="#7d8fc7" opacity=".4"/>
+    <ellipse cx="490" cy="330" rx="42" ry="30" fill="#f2b117" opacity=".35"/>
+    <ellipse cx="300" cy="406" rx="260" ry="28" fill="#7fae8e" opacity=".22"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- dlhý dom olejkára -->
+    <path d="M110 358 L110 240 L470 240 L470 358" stroke-width="3.6"/>
+    <path d="M100 242 L128 200 L452 200 L480 242" stroke-width="3.4"/>
+    <path d="M118 214 h330" stroke-width="1.8"/>
+    <!-- veľká klenutá brána -->
+    <path d="M232 358 L232 292 Q 262 262 292 292 L292 358" stroke-width="3.4" fill="#1d2f66" fill-opacity=".18"/>
+    <path d="M240 352 L240 296 Q 262 274 284 296 L284 352" stroke-width="2"/>
+    <!-- okná -->
+    <path d="M136 268 h26 v30 h-26 Z M184 268 h26 v30 h-26 Z" stroke-width="2.2"/>
+    <path d="M320 268 h26 v30 h-26 Z M368 268 h26 v30 h-26 Z M416 268 h26 v30 h-26 Z" stroke-width="2.2"/>
+    <path d="M149 268 v30 M197 268 v30 M333 268 v30 M381 268 v30 M429 268 v30" stroke-width="1.3"/>
+    <!-- brezy pred domom (z fotky) -->
+    <path d="M158 364 L164 244 M170 364 L174 250" stroke-width="2.6"/>
+    <path d="M160 280 l-10 -8 M166 300 l10 -8 M162 330 l-10 -8" stroke-width="1.6"/>
+    <!-- fľaštičky s olejčekmi -->
+    <path d="M478 352 L478 322 q0 -8 8 -8 l10 0 q8 0 8 8 L504 352 Z" stroke-width="2.6"/>
+    <path d="M486 314 h10 M488 306 h6" stroke-width="2.2"/>
+    <path d="M516 352 L516 330 q0 -6 6 -6 l8 0 q6 0 6 6 L536 352 Z" stroke-width="2.4"/>
+    <path d="M522 324 h8" stroke-width="2"/>
+    <path d="M544 352 L544 336 q0 -5 5 -5 l6 0 q5 0 5 5 L560 352 Z" stroke-width="2.2"/>
+    <!-- byliny -->
+    <path d="M60 360 q-4 -22 8 -34 M66 360 q2 -18 -6 -30 M74 360 q-2 -24 10 -36" stroke-width="1.8"/>
+    <!-- zem -->
+    <path d="M40 374 Q 200 366 320 370 Q 460 376 566 366" stroke-width="2.6"/>
+  </g>
+
+  <g fill="#f2b117" opacity=".6"><ellipse cx="491" cy="336" rx="8" ry="10"/><ellipse cx="524" cy="340" rx="6" ry="8"/></g>
+  <g fill="#7fae8e" opacity=".55"><ellipse cx="551" cy="344" rx="5" ry="6"/><circle cx="68" cy="322" r="2.6"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="120" cy="120" r="2.2"/><circle cx="520" cy="140" r="2"/></g>
+  <g fill="#d8404a" opacity=".5"><circle cx="360" cy="110" r="1.8"/><circle cx="80" cy="390" r="2"/></g>
+</svg>

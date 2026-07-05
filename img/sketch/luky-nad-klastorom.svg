@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 440">
+  <defs>
+    <filter id="rgh" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.016" numOctaves="3" seed="111" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="7"/>
+    </filter>
+    <filter id="wc" x="-25%" y="-25%" width="150%" height="150%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.028" numOctaves="4" seed="53" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="26" result="d"/>
+      <feGaussianBlur in="d" stdDeviation="1.4"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#wc)">
+    <ellipse cx="300" cy="70" rx="270" ry="45" fill="#b9c2e2" opacity=".3"/>
+    <ellipse cx="130" cy="160" rx="130" ry="55" fill="#7d8fc7" opacity=".3"/>
+    <ellipse cx="460" cy="150" rx="140" ry="50" fill="#b9c2e2" opacity=".4"/>
+    <ellipse cx="200" cy="250" rx="180" ry="60" fill="#7fae8e" opacity=".4"/>
+    <ellipse cx="440" cy="290" rx="160" ry="55" fill="#f2b117" opacity=".25"/>
+    <ellipse cx="300" cy="380" rx="260" ry="40" fill="#7fae8e" opacity=".3"/>
+    <ellipse cx="330" cy="330" rx="90" ry="16" fill="#7d8fc7" opacity=".45"/>
+  </g>
+
+  <g filter="url(#rgh)" fill="none" stroke="#1d2f66" stroke-linecap="round" stroke-linejoin="round">
+    <!-- kopce -->
+    <path d="M30 190 Q 130 120 240 182 M300 176 Q 420 110 566 178" stroke-width="2.6"/>
+    <path d="M180 150 l14 -34 6 8 6 -14 6 14 6 -8 14 34" stroke-width="2" fill="#1d2f66" fill-opacity=".7"/>
+    <!-- potok -->
+    <path d="M120 372 Q 240 322 330 330 Q 440 340 560 306" stroke-width="2.8"/>
+    <path d="M150 384 Q 250 342 330 348 Q 430 356 545 322" stroke-width="2.2"/>
+    <path d="M260 344 q12 -6 24 0 M360 342 q12 -6 24 0" stroke-width="1.4"/>
+    <!-- Marka Mácová perie pri potoku -->
+    <path d="M310 268 q-2 -16 12 -16 q14 0 12 16 q10 4 8 14 l-40 0 q-2 -10 8 -14" stroke-width="2.6"/>
+    <path d="M302 282 q-14 18 -6 34 q16 8 40 6 q10 -14 2 -32" stroke-width="2.6"/>
+    <path d="M296 316 q18 -10 34 -2" stroke-width="2"/>
+    <path d="M330 296 q16 6 26 18" stroke-width="2.2"/>
+    <!-- plátno vo vode -->
+    <path d="M352 322 q22 -6 40 4 q-16 10 -38 6" stroke-width="2"/>
+    <!-- vŕba -->
+    <path d="M96 360 L96 296 q-22 -24 -2 -40 q24 -14 24 12 q18 10 -4 26" stroke-width="2.6"/>
+    <path d="M92 300 q-8 22 -2 40 M104 296 q6 20 2 38 M112 302 q8 18 4 34" stroke-width="1.6"/>
+    <!-- ovce v diaľke -->
+    <path d="M470 254 q8 -8 16 0 q6 6 -2 8 q-10 2 -14 -8 M456 262 l2 8 M482 262 l2 8" stroke-width="1.8"/>
+    <path d="M510 246 q7 -7 14 0 q5 5 -2 7 q-9 2 -12 -7" stroke-width="1.6"/>
+    <!-- tráva -->
+    <path d="M180 396 l6 -12 M196 398 l6 -12 M420 380 l6 -12 M440 384 l6 -12 M520 360 l6 -12" stroke-width="1.8"/>
+  </g>
+
+  <g fill="#7fae8e" opacity=".55"><circle cx="240" cy="220" r="2.4"/><circle cx="520" cy="230" r="2"/></g>
+  <g fill="#f2b117" opacity=".5"><circle cx="400" cy="240" r="2.2"/><circle cx="90" cy="230" r="2"/></g>
+  <g fill="#7d8fc7" opacity=".5"><circle cx="150" cy="110" r="2.2"/><circle cx="470" cy="100" r="2"/><circle cx="560" cy="380" r="2.2"/></g>
+</svg>
