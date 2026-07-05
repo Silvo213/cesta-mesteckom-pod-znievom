@@ -179,16 +179,29 @@ hr.rule { border: 0; border-top: 1px solid var(--hair); }
    HERO — biely panel s obrovským titulkom a ilustráciou
    ------------------------------------------------------------ */
 .hero { border-bottom: 1px solid var(--hair); overflow: hidden; }
-.hero-grid {
-  display: grid; grid-template-columns: 1fr 1.05fr;
-  gap: clamp(30px, 4vw, 60px); align-items: center;
-  padding: clamp(50px, 6vw, 90px) 0 clamp(50px, 7vw, 100px);
+.hero-inner {
+  position: relative;
+  padding-top: clamp(50px, 6vw, 90px);
+  padding-bottom: clamp(50px, 7vw, 100px);
 }
-@media (max-width: 940px) { .hero-grid { grid-template-columns: 1fr; } }
+.hero-inner > * { position: relative; z-index: 2; }
+
+/* skica ako na podstránkach: veľká, vpravo, za textom */
+.hero-sketch {
+  position: absolute; z-index: 1;
+  right: clamp(-30px, -1vw, 10px);
+  bottom: clamp(20px, 4vw, 60px);
+  width: clamp(360px, 46vw, 720px);
+  margin: 0; pointer-events: none;
+}
+.hero-sketch img { width: 100%; height: auto; display: block; }
+@media (max-width: 940px) {
+  .hero-sketch { position: static; width: min(480px, 100%); margin: 0 auto 18px; }
+}
 
 .hero h1 { margin: 26px 0 30px; }
 .hero h1 em { font-style: normal; color: transparent; -webkit-text-stroke: 2px var(--blue); }
-.hero .lead { margin-bottom: 40px; }
+.hero .lead { margin-bottom: 40px; max-width: 50ch; }
 .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
 
 .hero-meta {
@@ -200,14 +213,6 @@ hr.rule { border: 0; border-top: 1px solid var(--hair); }
 .hero-meta span:nth-child(2) i { background: var(--gold); }
 .hero-meta span:nth-child(3) i { background: var(--green); }
 
-.hero-art { position: relative; }
-.hero-art svg, .hero-art img { width: 100%; height: auto; display: block; }
-.hero-art figcaption {
-  margin-top: 14px; font-size: .72rem; font-weight: 700;
-  letter-spacing: .26em; text-transform: uppercase;
-  display: flex; justify-content: space-between; gap: 10px;
-  border-top: 1px solid var(--hair); padding-top: 12px;
-}
 
 /* ------------------------------------------------------------
    BEŽIACI PÁS — ako gravírovaná lišta
