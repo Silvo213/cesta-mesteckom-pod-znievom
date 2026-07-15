@@ -17,9 +17,10 @@
     box-shadow:0 20px 60px rgba(0,0,0,.25); overflow:hidden;
   }
   @media print {
-    body { background:#fff; padding:0; }
+    body { background:#fff; padding:0; display:block; min-height:0; }
     .panel { box-shadow:none; }
-    @page { size: A3 landscape; margin:0; }
+    /* strana PDF = presne rozmer tabule (pomer ako A rad na šírku) */
+    @page { size: 1200px 848px; margin:0; }
   }
 
   /* ľavý stĺpec — plynulý tok: titulok, text, osobnosti */
